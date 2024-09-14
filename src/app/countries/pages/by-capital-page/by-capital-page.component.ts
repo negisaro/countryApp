@@ -1,32 +1,23 @@
 import { Component, ElementRef, ViewChild } from '@angular/core';
+import { CountriesService } from '../../services/countries.service';
+import { Country } from '../../interfaces/country';
 
 @Component({
   selector: 'app-by-capital-page',
-  templateUrl: './by-capital-page.component.html'
-
+  templateUrl: './by-capital-page.component.html',
 })
 export class ByCapitalPageComponent {
+  public countries: Country[] = [];
+
+  constructor(private countriesService: CountriesService) {}
 
   @ViewChild('txtInput')
   input!: ElementRef<HTMLInputElement>;
 
-  searchByCapital(term: string): void{
-
-    console.log('desde');
-    console.log({term})
-
+  searchByCapital(term: string): void {
+    this.countriesService.searchCapital(term).subscribe((countries) => {
+      this.countries = countries;
+    });
+    
   }
-
 }
-/*
- @ViewChild('txtTagInput')
-  tagInput!: ElementRef<HTMLInputElement>;
-
-  constructor(private gifsService: GifsService) {}
-
-  searchTag() {
-    const newTag = this.tagInput.nativeElement.value;
-    this.gifsService.searchTag(newTag);
-    this.tagInput.nativeElement.value = '';
-  }
-*/
