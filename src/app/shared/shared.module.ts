@@ -7,6 +7,8 @@ import { ContactPageComponent } from './pages/contact/contact-page.component';
 import { HomePageComponent } from './pages/home-page/home-page.component';
 import { SearchBoxComponent } from './components/search-box/search-box.component';
 import { SidebarComponent } from './components/sidebar/sidebar.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
 
 
 @NgModule({
@@ -16,6 +18,8 @@ import { SidebarComponent } from './components/sidebar/sidebar.component';
     HomePageComponent,
     SearchBoxComponent,
     SidebarComponent,
+    FooterComponent,
+    NavbarComponent,
   ],
   imports: [
     CommonModule,
@@ -27,6 +31,8 @@ import { SidebarComponent } from './components/sidebar/sidebar.component';
     HomePageComponent,
     SearchBoxComponent,
     SidebarComponent,
+    FooterComponent,
+    NavbarComponent,
   ]
 })
 export class SharedModule { }

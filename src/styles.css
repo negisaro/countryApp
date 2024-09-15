@@ -6,6 +6,7 @@
     @apply text-surface;
     @apply bg-white;
   }
+
   html.dark {
     @apply text-neutral-50;
     @apply bg-body-dark;
@@ -17,4 +18,6 @@
 
 p {
   @apply leading-[1.6];
-}/* You can add global styles to this file, and also import other style files */
+}
+
+/* You can add global styles to this file, and also import other style files */
