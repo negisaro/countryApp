@@ -7,7 +7,9 @@
     <div class="overflow-x-auto sm:-mx-6 lg:-mx-8">
       <div class="inline-block min-w-full py-2 sm:px-6 lg:px-8">
         <div class="overflow-hidden">
-          <table class="min-w-full text-center text-sm font-light text-surface dark:text-white">
+          <table class="min-w-full text-center text-sm font-light text-surface dark:text-white"
+          data-twe-spy="scroll" data-twe-target="#scrollspy-collapsible" data-twe-offset="0"
+          >
             <thead class="border-b border-neutral-200 bg-[#68829b] font-medium text-white dark:border-white/10">
               <tr>
                 <th scope="col" class=" px-6 py-4 text-left">#</th>
@@ -24,10 +26,12 @@
                 <td class="whitespace-nowrap  px-6 py-4 text-left"> {{i + 1}}</td>
                 <td class="whitespace-nowrap  px-6 py-4 text-left"> {{country.flag}}</td>
                 <td class="whitespace-nowrap  px-6 py-4 text-left">
-                  <img [src]="country.flags.svg" alt="country.name.common"></td>
+                  <img [src]="country.flags.svg" alt="country.name.common">
+                </td>
                 <td class="whitespace-nowrap  px-6 py-4 text-left"> {{country.capital}}</td>
                 <td class="whitespace-nowrap  px-6 py-4 text-center">{{country.population | number}}</td>
                 <td class="whitespace-nowrap  px-6 py-4 text-center">{{country.languages.spa}}</td>
+                <td><a href="">Info</a></td>
               </tr>
             </tbody>
           </table>

@@ -1,38 +1,36 @@
-<div class="bg-dark border-right p-3 bg-gradient-to-br from-gray-600 to-gray-900 rounded-xl" id="sidebar">
+<div class="w-full bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
+  id="sidebar">
 
-  <a class="flex items-center gap-4 py-6 px-8" href="">
-    <h6 class="block antialiased tracking-normal font-sans text-base font-semibold leading-relaxed text-white">
+  <a class="flex items-center gap-4 py-6 px-8" routerLink="">
+    <h2 class="block antialiased tracking-normal font-sans text-base font-semibold leading-relaxed text-cyan-800">
       Paises
-    </h6>
+    </h2>
   </a>
 
-  <hr class="text-light">
+  <hr class="text-dark">
 
-  <div class="relative border-b border-white/20">
+  <div class="relative border-b border-dark/50">
     <div class="m-4">
       <ul class="mb-4 flex flex-col gap-1">
         <li routerLink="countries/by-capital" routerLinkActive="active">
-          <button
-            class="middle none font-sans font-bold center transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none text-xs py-3 rounded-lg text-white hover:bg-white/10 active:bg-white/30 flex w-full items-center gap-4 px-4 capitalize"
-            type="button">
+          <button class="middle none font-sans font-bold center transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none text-xs py-3 rounded-lg text-cyan-800 hover:bg-cyan-800/30 active:bg-cyan-200/30 flex w-full items-center gap-4 px-4 capitalize
+            focus:bg-cyan-accent-800 focus:shadow-primary-2 focus:outline-none focus:ring-0" type="button">
             <p class="block antialiased font-sans text-base leading-relaxed text-inherit font-medium capitalize">
               Por Capital
             </p>
           </button>
         </li>
         <li routerLink="countries/by-country" routerLinkActive="active">
-          <button
-            class="middle none font-sans font-bold center transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none text-xs py-3 rounded-lg text-white hover:bg-white/10 active:bg-white/30 flex w-full items-center gap-4 px-4 capitalize"
-            type="button">
+          <button class="middle none font-sans font-bold center transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none text-xs py-3 rounded-lg text-cyan-800 hover:bg-cyan-800/30 active:bg-cyan-200/30 flex w-full items-center gap-4 px-4 capitalize
+            focus:bg-cyan-accent-800 focus:shadow-primary-3 focus:outline-none focus:ring-0" type="button">
             <p class="block antialiased font-sans text-base leading-relaxed text-inherit font-medium capitalize">
               Por Pais
             </p>
           </button>
         </li>
         <li routerLink="countries/by-region" routerLinkActive="active">
-          <button
-            class="middle none font-sans font-bold center transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none text-xs py-3 rounded-lg text-white hover:bg-white/10 active:bg-white/30 flex w-full items-center gap-4 px-4 capitalize"
-            type="button">
+          <button class="middle none font-sans font-bold center transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none text-xs py-3 rounded-lg text-cyan-800 hover:bg-cyan-800/30 active:bg-cyan-200/30 flex w-full items-center gap-4 px-4 capitalize
+            focus:bg-cyan-accent-500 focus:shadow-primary-2 focus:outline-none focus:ring-0 " type="button">
             <p class="block antialiased font-sans text-base leading-relaxed text-inherit font-medium capitalize">
               Por Región
             </p>
@@ -41,8 +39,8 @@
       </ul>
     </div>
     <div>
-      
-      <hr class="text-light">
+
+      <hr class="text-dark">
 
       <ul class="mb-4 flex flex-col gap-1">
         <li class="mx-3.5 mt-4 mb-2">
@@ -50,10 +48,9 @@
             pages</p>
         </li>
         <li>
-          <a class="" href="#">
-            <button
-              class="middle none font-sans font-bold center transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none text-xs py-3 rounded-lg text-white hover:bg-white/10 active:bg-white/30 w-full flex items-center gap-4 px-4 capitalize"
-              type="button">
+          <a class="" routerLink="contact">
+            <button class="middle none font-sans font-bold center transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none text-xs py-3 rounded-lg text-cyan-800 hover:bg-cyan-800/30 active:bg-cyan-200/30 w-full flex items-center gap-4 px-4 capitalize
+              focus:bg-cyan-accent-800 focus:shadow-primary-3 focus:outline-none focus:ring-0" type="button">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"
                 class="w-5 h-5 text-inherit">
                 <path fill-rule="evenodd"
@@ -66,10 +63,9 @@
           </a>
         </li>
         <li>
-          <a class="" href="#">
-            <button
-              class="middle none font-sans font-bold center transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none text-xs py-3 rounded-lg text-white hover:bg-white/10 active:bg-white/30 w-full flex items-center gap-4 px-4 capitalize"
-              type="button">
+          <a class="" routerLink="">
+            <button class="middle none font-sans font-bold center transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none text-xs py-3 rounded-lg text-cyan-800 hover:bg-cyan-800/30 active:bg-cyan-200/50 w-full flex items-center gap-4 px-4 capitalize
+              focus:bg-cyan-accent-800 focus:shadow-primary-3 focus:outline-none focus:ring-0" type="button">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"
                 class="w-5 h-5 text-inherit">
                 <path
@@ -82,6 +78,7 @@
           </a>
         </li>
       </ul>
+      <hr class="text-dark">
     </div>
   </div>
 </div>

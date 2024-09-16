@@ -1,6 +1,6 @@
 #sidebar {
-  width: auto;
-  height: auto;
+  width: 250px;
+  height: 100vh;
   order: 1;
   margin: 5px;
 
