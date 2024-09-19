@@ -18,7 +18,7 @@
                 <th scope="col" class=" px-6 py-4 text-left">Nombre Capital</th>
                 <th scope="col" class=" px-6 py-4">Poblacion</th>
                 <th scope="col" class=" px-6 py-4">Idioma</th>
-
+                <th scope="col" class=" px-6 py-4">Ver mas</th>
               </tr>
             </thead>
             <tbody *ngFor="let country of countries; let i = index">
@@ -31,7 +31,7 @@
                 <td class="whitespace-nowrap  px-6 py-4 text-left"> {{country.capital}}</td>
                 <td class="whitespace-nowrap  px-6 py-4 text-center">{{country.population | number}}</td>
                 <td class="whitespace-nowrap  px-6 py-4 text-center">{{country.languages.spa}}</td>
-                <td><a href="">Info</a></td>
+                <td><a [routerLink]="[ '/countries/by', country.cca3]">Info</a></td>
               </tr>
             </tbody>
           </table>
@@ -40,3 +40,4 @@
     </div>
   </div>
 </ng-template>
+

@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, computed, inject } from '@angular/core';
+import { AuthService } from '../../../auth/services/auth.service';
 
 @Component({
   selector: 'shared-sidebar',
@@ -6,5 +7,11 @@ import { Component } from '@angular/core';
   styleUrl: './sidebar.component.css'
 })
 export class SidebarComponent {
+  private authService = inject( AuthService );
+
+  public user = computed(() => this.authService.currentUser() );
+  onLogout() {
+    this.authService.logout();
+  }
 
 }

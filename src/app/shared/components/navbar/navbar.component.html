@@ -1,27 +1,27 @@
-<nav class="w-full bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+<nav class="w-full bg-neutral-800 .dark:bg-neutral-900 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
   <div class="flex w-full flex-wrap items-center justify-between px-3 ">
     <ul
-      class="flex flex-wrap text-sm font-medium text-center text-gray-500 border-b border-gray-200 rounded-t-lg bg-gray-50 dark:border-gray-700 dark:text-gray-400 dark:bg-gray-800"
+      class="flex flex-wrap text-sm font-medium text-center text-gray-500 border-b border-gray-200 rounded-t-lg bg-dark-50 dark:border-gray-700 dark:text-gray-400 dark:bg-gray-800"
       id="defaultTab" data-tabs-toggle="#defaultTabContent" role="tablist">
       <li class="me-2">
-        <button id="home-tab" data-tabs-target="#home" type="button" role="tab" aria-controls="home"
-          aria-selected="true" routerLink=""
-          class="inline-block p-4 text-blue-600 rounded-ss-lg hover:bg-gray-100 dark:bg-gray-800 dark:hover:bg-gray-700 dark:text-blue-500">Inicio</button>
+        <button id="home-tab" data-tabs-target="about" type="button" role="tab" aria-controls="home" aria-selected="true"
+          routerLink="contact" class="inline-block p-4 text-cyan-800 rounded-ss-lg hover:bg-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700
+          focus:bg-cyan-accent-800 focus:shadow-primary-2 focus:outline-none focus:ring-0">Inicio</button>
       </li>
       <li class="me-2">
-        <button id="about-tab" data-tabs-target="about" type="button" role="tab" aria-controls="about" routerLink="about"
-          aria-selected="true"
-          class="inline-block p-4 text-blue-600 rounded-ss-lg hover:bg-gray-100 dark:bg-gray-800 dark:hover:bg-gray-700 dark:text-blue-500">About</button>
+        <button id="about-tab" data-tabs-target="about" type="button" role="tab" aria-controls="about"
+          routerLink="about" aria-selected="true"
+          class="inline-block p-4 text-cyan-800 hover:bg-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">About</button>
       </li>
       <li class="me-2">
-        <button id="services-tab" data-tabs-target="#services" type="button" role="tab" aria-controls="services"
-          aria-selected="true"
-          class="inline-block p-4 hover:text-gray-600 hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-gray-300">Services</button>
+        <button id="services-tab" data-tabs-target="" type="button" role="tab" aria-controls="contact"
+          aria-selected="true"  routerLink="contact"
+          class="inline-block p-4 text-cyan-800 hover:text-gray-600 hover:bg-gray-700 dark:hover:bg-gray-700 dark:hover:text-gray-300">Contacto</button>
       </li>
       <li class="me-2">
-        <button id="statistics-tab" data-tabs-target="#statistics" type="button" role="tab" aria-controls="statistics"
+        <button id="statistics-tab" data-tabs-target="" type="button" role="tab" aria-controls="statistics"
           aria-selected="true"
-          class="inline-block p-4 hover:text-gray-600 hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-gray-300">Facts</button>
+          class="inline-block p-4 text-cyan-800 hover:text-gray-600 hover:bg-gray-700 dark:hover:bg-gray-700 dark:hover:text-gray-300">Facts</button>
       </li>
     </ul>
     <div class="ms-5 flex w-[30%] items-center justify-between">
@@ -37,6 +37,3 @@
     </div>
   </div>
 </nav>
-
-
-

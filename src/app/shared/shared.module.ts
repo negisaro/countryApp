@@ -9,6 +9,8 @@ import { SearchBoxComponent } from './components/search-box/search-box.component
 import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
+import { SidebarDerechoComponent } from './components/sidebar-derecho/sidebar-derecho.component';
+
 
 
 @NgModule({
@@ -20,6 +22,7 @@ import { NavbarComponent } from './components/navbar/navbar.component';
     SidebarComponent,
     FooterComponent,
     NavbarComponent,
+    SidebarDerechoComponent,
   ],
   imports: [
     CommonModule,
@@ -33,6 +36,7 @@ import { NavbarComponent } from './components/navbar/navbar.component';
     SidebarComponent,
     FooterComponent,
     NavbarComponent,
+    SidebarDerechoComponent,
   ]
 })
 export class SharedModule { }
